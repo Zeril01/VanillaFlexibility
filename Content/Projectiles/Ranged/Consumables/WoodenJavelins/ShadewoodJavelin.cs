@@ -1,0 +1,59 @@
+﻿using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.Audio;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables.WoodenJavelins
+{
+    public class ShadewoodJavelin : ModProjectile
+    {
+        public override string Texture => VanillaFlexibility.AssetPath + "Textures/Projectiles/WoodenJavelins/ShadewoodJavelin";
+
+        public override void SetDefaults()
+        {
+            Projectile.CloneDefaults(ModContent.ProjectileType<WoodenJavelin>());
+
+            Projectile.width = Projectile.height = 10;
+            DrawOffsetX = DrawOriginOffsetY = -2;
+        }
+
+        public override bool PreAI()
+        {
+            // If projectile sprite faces up
+            Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver2;
+            Projectile.spriteDirection = -Projectile.direction;
+
+            if (Projectile.timeLeft < 158)
+            {
+                Projectile.velocity.X *= 0.98f;
+                Projectile.velocity.Y += 0.3f;
+            }
+
+            if (Projectile.lavaWet) Projectile.Kill();
+            return false;
+        }
+
+        public override void OnKill(int timeLeft)
+        {
+            SoundEngine.PlaySound(SoundID.Dig, Projectile.position);
+
+            Vector2 usePos = Projectile.position;
+            Vector2 rotationVector = (Projectile.rotation - MathHelper.ToRadians(90f)).ToRotationVector2();
+            usePos += rotationVector * 16f;
+
+            for (int i = 0; i < 18; i++)
+            {
+                Dust dust = Dust.NewDustDirect(usePos, Projectile.width, Projectile.height, DustID.Shadewood);
+                dust.position = (dust.position + Projectile.Center) / 2f;
+                dust.velocity += rotationVector * 2f;
+                dust.velocity *= 0.5f;
+                dust.noGravity = true;
+                usePos -= rotationVector * 6f;
+            }
+
+        }
+
+    }
+
+}

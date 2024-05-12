@@ -4,10 +4,12 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables.Javelins
+namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables.WoodenJavelins
 {
-    public class RichMahoganyJavelin : ModProjectile
+    public class PearlwoodJavelin : ModProjectile
     {
+        public override string Texture => VanillaFlexibility.AssetPath + "Textures/Projectiles/WoodenJavelins/PearlwoodJavelin";
+
         public override void SetDefaults()
         {
             Projectile.CloneDefaults(ModContent.ProjectileType<WoodenJavelin>());
@@ -42,7 +44,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables.Javelins
 
             for (int i = 0; i < 18; i++)
             {
-                Dust dust = Dust.NewDustDirect(usePos, Projectile.width, Projectile.height, DustID.RichMahogany);
+                Dust dust = Dust.NewDustDirect(usePos, Projectile.width, Projectile.height, DustID.Pearlwood);
                 dust.position = (dust.position + Projectile.Center) / 2f;
                 dust.velocity += rotationVector * 2f;
                 dust.velocity *= 0.5f;
