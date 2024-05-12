@@ -1,0 +1,3 @@
+displayName = Vanilla: Flexibility++ // Alpha
+author = Gluttony
+version = 0.1

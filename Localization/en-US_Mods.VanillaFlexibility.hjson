@@ -1,0 +1,52 @@
+Items: {
+	StoneSpear: {
+		DisplayName: Stone Spear
+		Tooltip: "'Everyone starts somewhere'"
+	}
+
+	MetalSpear: {
+		DisplayName: Metal Spear
+		Tooltip: ""
+	}
+
+	ColdMetalSpear: {
+		DisplayName: Cold Metal Spear
+		Tooltip: Inflict Frostburn on impact
+	}
+
+	ShimmerKnife: {
+		DisplayName: Shimmer Knife
+		Tooltip: Falls up with a slight delay
+	}
+
+	ShimmerShuriken: {
+		DisplayName: Shimmer Shuriken
+		Tooltip: Falls up with a slight delay
+	}
+
+	ShimmerBall: {
+		DisplayName: Shimmer Ball
+		Tooltip: "'She shimmering! It's Shamazing!'"
+	}
+
+	WoodenJavelin: {
+		DisplayName: Wooden Javelin
+		Tooltip: ""
+	}
+
+	RichMahoganyJavelin: {
+		DisplayName: Rich Mahogany Javelin
+		Tooltip: ""
+	}
+}
+
+Projectiles: {
+	StoneSpear.DisplayName: Stone Spear
+	MetalSpear.DisplayName: Metal Spear
+	ColdMetalSpear.DisplayName: Cold Metal Spear
+	ShimmerKnife.DisplayName: Shimmer Knife
+	ShimmerShuriken.DisplayName: Shimmer Shuriken
+	WoodenJavelin.DisplayName: Wooden Javelin
+	ShimmerBall.DisplayName: Shimmer Ball
+	RichMahoganyJavelin.DisplayName: Rich Mahogany Javelin
+}
