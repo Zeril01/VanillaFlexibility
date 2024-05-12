@@ -38,36 +38,6 @@ Items: {
 		DisplayName: Rich Mahogany Javelin
 		Tooltip: ""
 	}
-
-	AshWoodJavelin: {
-		DisplayName: Ash Wood Javelin
-		Tooltip: ""
-	}
-
-	BorealWoodJavelin: {
-		DisplayName: Boreal Wood Javelin
-		Tooltip: ""
-	}
-
-	EbonwoodJavelin: {
-		DisplayName: Ebonwood Javelin
-		Tooltip: ""
-	}
-
-	PalmWoodJavelin: {
-		DisplayName: Palm Wood Javelin
-		Tooltip: ""
-	}
-
-	PearlwoodJavelin: {
-		DisplayName: Pearlwood Javelin
-		Tooltip: ""
-	}
-
-	ShadewoodJavelin: {
-		DisplayName: Shadewood Javelin
-		Tooltip: ""
-	}
 }
 
 Projectiles: {
@@ -79,10 +49,4 @@ Projectiles: {
 	WoodenJavelin.DisplayName: Wooden Javelin
 	ShimmerBall.DisplayName: Shimmer Ball
 	RichMahoganyJavelin.DisplayName: Rich Mahogany Javelin
-	AshWoodJavelin.DisplayName: Ash Wood Javelin
-	BorealWoodJavelin.DisplayName: Boreal Wood Javelin
-	EbonwoodJavelin.DisplayName: Ebonwood Javelin
-	PalmWoodJavelin.DisplayName: Palm Wood Javelin
-	PearlwoodJavelin.DisplayName: Pearlwood Javelin
-	ShadewoodJavelin.DisplayName: Shadewood Javelin
 }

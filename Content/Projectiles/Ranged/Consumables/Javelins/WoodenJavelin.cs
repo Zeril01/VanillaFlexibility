@@ -4,18 +4,20 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables.WoodenJavelins
+namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables.Javelins
 {
-    public class PalmWoodJavelin : ModProjectile
+    public class WoodenJavelin : ModProjectile
     {
-        public override string Texture => VanillaFlexibility.AssetPath + "Textures/Projectiles/WoodenJavelins/PalmWoodJavelin";
-
         public override void SetDefaults()
         {
-            Projectile.CloneDefaults(ModContent.ProjectileType<WoodenJavelin>());
+            Projectile.CloneDefaults(ProjectileID.JavelinFriendly);
 
             Projectile.width = Projectile.height = 10;
             DrawOffsetX = DrawOriginOffsetY = -2;
+
+            Projectile.penetrate = 1;
+
+            Projectile.timeLeft = 60 * 3;
         }
 
         public override bool PreAI()
@@ -44,7 +46,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables.WoodenJaveli
 
             for (int i = 0; i < 18; i++)
             {
-                Dust dust = Dust.NewDustDirect(usePos, Projectile.width, Projectile.height, DustID.PalmWood);
+                Dust dust = Dust.NewDustDirect(usePos, Projectile.width, Projectile.height, DustID.WoodFurniture);
                 dust.position = (dust.position + Projectile.Center) / 2f;
                 dust.velocity += rotationVector * 2f;
                 dust.velocity *= 0.5f;
