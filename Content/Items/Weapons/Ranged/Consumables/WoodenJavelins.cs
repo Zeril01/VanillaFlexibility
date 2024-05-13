@@ -1,4 +1,5 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
@@ -235,10 +236,10 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
 
             // Weapon Properties
             Item.damage += 6; // 19
-
+            
             // Projectile Properties
             Item.shoot = ModContent.ProjectileType<Projectiles.Ranged.Consumables.WoodenJavelins.AshWoodJavelin>();
-            Item.shootSpeed += 0.5f; // 9f
+            Item.shootSpeed += 1f; // 9.5f
         }
 
         public override void AddRecipes()

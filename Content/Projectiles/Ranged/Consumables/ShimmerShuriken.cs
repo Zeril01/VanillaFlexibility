@@ -25,7 +25,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables
 
         public override bool PreAI()
         {
-            if (Projectile.ai[0] >= 20f) Projectile.velocity.Y -= 0.4f * 2;
+            if (Projectile.timeLeft <= 280) Projectile.velocity.Y -= 0.4f * 2;
 
             if (Projectile.velocity.Y < -16f) Projectile.velocity.Y = -16f;
 

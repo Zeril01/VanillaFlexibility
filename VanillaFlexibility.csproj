@@ -14,7 +14,6 @@
 	  <Folder Include="Content\Items\Weapons\Ranged\Arrows\" />
 	  <Folder Include="Content\Items\Weapons\Ranged\Bullets\" />
 	  <Folder Include="Content\Projectiles\Ranged\Arrows\" />
-	  <Folder Include="Content\Projectiles\Ranged\Bullets\" />
 	</ItemGroup>
 
 </Project>

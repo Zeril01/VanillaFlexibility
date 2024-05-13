@@ -11,14 +11,17 @@ namespace VanillaFlexibility.Common.GlobalItems
     {
         public override void SetStaticDefaults()
         {
-            // Melee
+            // M-E-L-E-E
+            // Flails
             ItemID.Sets.ShimmerTransformToItem[ItemID.Mace] = ModContent.ItemType<MetalSpear>();
             ItemID.Sets.ShimmerTransformToItem[ItemID.FlamingMace] = ModContent.ItemType<MetalSpear>();
 
-            // Ranged
+            // R-A-N-G-E-D
+            // Consumables
             ItemID.Sets.ShimmerTransformToItem[ItemID.Shuriken] = ModContent.ItemType<ShimmerShuriken>();
             ItemID.Sets.ShimmerTransformToItem[ItemID.ThrowingKnife] = ModContent.ItemType<ShimmerKnife>();
 
+            // Bullets
             ItemID.Sets.ShimmerTransformToItem[ItemID.MusketBall] = ModContent.ItemType<ShimmerBall>();
         }
 
@@ -34,6 +37,17 @@ namespace VanillaFlexibility.Common.GlobalItems
                   .AddRecipeGroup(RecipeGroupID.IronBar)
                   .AddTile(TileID.Anvils)
                   .Register();
+        }
+
+    }
+
+    public class TungstenBulletGlobalChanges : GlobalItem
+    {
+        public override bool AppliesToEntity(Item item, bool lateInstantiation) => item.type == ItemID.TungstenBullet;
+
+        public override void SetDefaults(Item item)
+        {
+            item.shoot = ModContent.ProjectileType<Content.Projectiles.Ranged.Bullets.ReTungstenBullet>();
         }
 
     }
