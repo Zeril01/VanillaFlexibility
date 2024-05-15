@@ -11,7 +11,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables
     {
         public override void SetDefaults()
         {
-            Projectile.CloneDefaults(ProjectileID.PoisonedKnife);
+            Projectile.CloneDefaults(ProjectileID.ThrowingKnife);
 
             Projectile.timeLeft = 60 * 5;
         }

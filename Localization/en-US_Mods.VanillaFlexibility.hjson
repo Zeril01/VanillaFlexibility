@@ -39,23 +39,13 @@ Items: {
 		Tooltip: ""
 	}
 
-	AshWoodJavelin: {
-		DisplayName: Ash Wood Javelin
-		Tooltip: ""
-	}
-
-	BorealWoodJavelin: {
-		DisplayName: Boreal Wood Javelin
-		Tooltip: ""
-	}
-
 	EbonwoodJavelin: {
 		DisplayName: Ebonwood Javelin
 		Tooltip: ""
 	}
 
-	PalmWoodJavelin: {
-		DisplayName: Palm Wood Javelin
+	ShadewoodJavelin: {
+		DisplayName: Shadewood Javelin
 		Tooltip: ""
 	}
 
@@ -64,8 +54,33 @@ Items: {
 		Tooltip: ""
 	}
 
-	ShadewoodJavelin: {
-		DisplayName: Shadewood Javelin
+	BorealWoodJavelin: {
+		DisplayName: Boreal Wood Javelin
+		Tooltip: ""
+	}
+
+	PalmWoodJavelin: {
+		DisplayName: Palm Wood Javelin
+		Tooltip: ""
+	}
+
+	AshWoodJavelin: {
+		DisplayName: Ash Wood Javelin
+		Tooltip: ""
+	}
+
+	BoneBall: {
+		DisplayName: Bone Ball
+		Tooltip:
+			'''
+			'Crushed, then compressed'
+			After first piercing,
+			damage is reduced by half
+			'''
+	}
+
+	CopperFlail: {
+		DisplayName: Copper Flail
 		Tooltip: ""
 	}
 }
@@ -76,14 +91,16 @@ Projectiles: {
 	ColdMetalSpear.DisplayName: Cold Metal Spear
 	ShimmerKnife.DisplayName: Shimmer Knife
 	ShimmerShuriken.DisplayName: Shimmer Shuriken
-	WoodenJavelin.DisplayName: Wooden Javelin
 	ShimmerBall.DisplayName: Shimmer Ball
+	ReTungstenBullet.DisplayName: Tungsten Bullet
+	WoodenJavelin.DisplayName: Wooden Javelin
 	RichMahoganyJavelin.DisplayName: Rich Mahogany Javelin
-	AshWoodJavelin.DisplayName: Ash Wood Javelin
-	BorealWoodJavelin.DisplayName: Boreal Wood Javelin
 	EbonwoodJavelin.DisplayName: Ebonwood Javelin
-	PalmWoodJavelin.DisplayName: Palm Wood Javelin
-	PearlwoodJavelin.DisplayName: Pearlwood Javelin
 	ShadewoodJavelin.DisplayName: Shadewood Javelin
-	ReTungstenBullet.DisplayName: Re Tungsten Bullet
+	PearlwoodJavelin.DisplayName: Pearlwood Javelin
+	BorealWoodJavelin.DisplayName: Boreal Wood Javelin
+	PalmWoodJavelin.DisplayName: Palm Wood Javelin
+	AshWoodJavelin.DisplayName: Ash Wood Javelin
+	BoneBall.DisplayName: Bone Ball
+	CopperFlail.DisplayName: Copper Flail
 }

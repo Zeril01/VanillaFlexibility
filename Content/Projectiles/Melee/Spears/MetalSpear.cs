@@ -10,14 +10,8 @@ namespace VanillaFlexibility.Content.Projectiles.Melee.Spears
     {
         protected virtual float HoldoutRangeMin => 30f;
         protected virtual float HoldoutRangeMax => 96f; // Spear have ~ 84f
-
-        public override void SetDefaults()
-        {
-            Projectile.CloneDefaults(ProjectileID.Spear);
-
-            Projectile.width = Projectile.height = 18;
-        }
-
+        public override void SetDefaults() => Projectile.CloneDefaults(ProjectileID.Trident);
+        
         public override bool PreAI()
         {
             Player player = Main.player[Projectile.owner];

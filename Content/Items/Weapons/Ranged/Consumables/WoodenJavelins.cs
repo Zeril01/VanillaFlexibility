@@ -11,22 +11,23 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
 
         public override void SetDefaults()
         {
-            Item.CloneDefaults(ItemID.Javelin);
+            Item.CloneDefaults(ItemID.BoneJavelin);
 
             // Common Properties
-            Item.value = 4; // Sell value: 4 / 5 = 0.8 Copper
-            Item.width = Item.height = 24;
+            Item.value -= 45; // Sell value: 5 / 5 = 1 Copper
+            Item.rare = ItemRarityID.White;
+            Item.width = Item.height -= 6; // 24
 
             // Use Properties
-            Item.useAnimation = Item.useTime = 27;
+            Item.useAnimation = Item.useTime += 2; // 27
 
             // Weapon Properties
-            Item.damage = 13;
-            Item.knockBack = 3f;
+            Item.damage -= 7; // 13
+            Item.knockBack -= 2f; // 3f
 
             // Projectile Properties
             Item.shoot = ModContent.ProjectileType<Projectiles.Ranged.Consumables.WoodenJavelins.WoodenJavelin>();
-            Item.shootSpeed = 8.5f;
+            Item.shootSpeed -= 1.5f; // 8.5f
         }
 
         public override void AddRecipes()

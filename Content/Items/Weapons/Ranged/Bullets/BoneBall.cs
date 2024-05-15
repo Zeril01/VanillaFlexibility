@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Bullets
 {
-    public class ShimmerBall : ModItem
+    public class BoneBall : ModItem
     {
         public override void SetStaticDefaults() => Item.ResearchUnlockCount = 99;
 
@@ -12,19 +12,17 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Bullets
             Item.CloneDefaults(ItemID.MusketBall);
 
             // Common Properties
-            Item.value += 2; // Sell value: 9 / 5 = 1.8 Copper
-            Item.rare = ItemRarityID.Green;
+            Item.value += 13; // Sell value: 20 / 5 = 4 Copper
 
             // Weapon Properties
-            Item.damage += 3; // 10
-            Item.crit += 2; // 6
-            Item.knockBack += 0.5f; // 2.5f
+            Item.damage -= 1; // 6
+            Item.knockBack -= 0.7f; // 1.3f
 
             // Projectile Properties
-            Item.shoot = ModContent.ProjectileType<Projectiles.Ranged.Bullets.ShimmerBall>();
-            Item.shootSpeed += 0.25f; // 4.25f
+            Item.shoot = ModContent.ProjectileType<Projectiles.Ranged.Bullets.BoneBall>();
+            Item.shootSpeed -= 1.5f; // 2.5f
         }
-
+        // This bullet can be obtained by buying from a Skeleton Merchant
     }
 
 }

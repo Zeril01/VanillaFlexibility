@@ -44,12 +44,7 @@ namespace VanillaFlexibility.Common.GlobalItems
     public class TungstenBulletGlobalChanges : GlobalItem
     {
         public override bool AppliesToEntity(Item item, bool lateInstantiation) => item.type == ItemID.TungstenBullet;
-
-        public override void SetDefaults(Item item)
-        {
-            item.shoot = ModContent.ProjectileType<Content.Projectiles.Ranged.Bullets.ReTungstenBullet>();
-        }
-
+        public override void SetDefaults(Item item) => item.shoot = ModContent.ProjectileType<Content.Projectiles.Ranged.Bullets.ReTungstenBullet>();
     }
 
 }

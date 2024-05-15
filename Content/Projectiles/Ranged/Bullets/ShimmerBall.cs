@@ -12,20 +12,15 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
         public override void SetDefaults()
         {
             Projectile.CloneDefaults(ProjectileID.Bullet);
+            AIType = ProjectileID.Bullet;
 
-            Projectile.timeLeft = 40;
+            Projectile.timeLeft = 30;
         }
 
         public override Color? GetAlpha(Color lightColor) => Color.White * Projectile.Opacity;
 
         public override bool PreAI()
         {
-            // If projectile sprite faces up
-            Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver2;
-
-            // So as not to block the muzzle of the weapon from which it appears
-            if (Projectile.alpha > 0) Projectile.alpha -= 15;
-
             if (!Main.dedServ)
             {
                 if (Main.rand.NextBool(16)) // Shimmer Arrow have 8
@@ -40,7 +35,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
                 }
 
             }
-            return false;
+            return true;
         }
 
         public override void OnKill(int timeLeft)

@@ -9,19 +9,20 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
 
         public override void SetDefaults()
         {
-            Item.CloneDefaults(ItemID.PoisonedKnife);
+            Item.CloneDefaults(ItemID.ThrowingKnife);
 
             // Common Properties
-            Item.value = 70; // Sell value: 70 / 5 = 14 Copper
+            Item.value += 15; // Sell value: 65 / 5 = 13 Copper
             Item.rare = ItemRarityID.Blue;
-            Item.width = 10;
-            Item.height = 18;
+            Item.width -= 8; // 10
+            Item.height -= 2; // 18
 
             // Weapon Properties
-            Item.damage = 15;
+            Item.damage += 3; // 15
 
             // Projectile Properties
             Item.shoot = ModContent.ProjectileType<Projectiles.Ranged.Consumables.ShimmerKnife>();
+            Item.shootSpeed += 2f; // 12f
         }
 
     }

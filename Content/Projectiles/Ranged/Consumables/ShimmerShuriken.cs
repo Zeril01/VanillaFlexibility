@@ -11,12 +11,10 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables
     {
         public override void SetDefaults()
         {
-            Projectile.CloneDefaults(ProjectileID.StarAnise);
+            Projectile.CloneDefaults(ProjectileID.Shuriken);
 
             Projectile.width = Projectile.height = 20;
             DrawOffsetX = DrawOriginOffsetY = -2;
-
-            Projectile.penetrate = 4;
 
             Projectile.timeLeft = 60 * 5;
         }

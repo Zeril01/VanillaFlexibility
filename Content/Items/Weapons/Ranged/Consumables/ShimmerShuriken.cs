@@ -9,18 +9,19 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
 
         public override void SetDefaults()
         {
-            Item.CloneDefaults(ItemID.StarAnise);
+            Item.CloneDefaults(ItemID.Shuriken);
 
             // Common Properties
-            Item.value = 25; // Sell value: 25 / 5 = 5 Copper
+            Item.value += 10; // Sell value: 25 / 5 = 5 Copper
             Item.rare = ItemRarityID.Blue;
             Item.width = Item.height = 20;
 
             // Weapon Properties
-            Item.damage = 13;
+            Item.damage += 3; // 13
 
             // Projectile Properties
             Item.shoot = ModContent.ProjectileType<Projectiles.Ranged.Consumables.ShimmerShuriken>();
+            Item.shootSpeed += 3f; // 12f
         }
 
     }
