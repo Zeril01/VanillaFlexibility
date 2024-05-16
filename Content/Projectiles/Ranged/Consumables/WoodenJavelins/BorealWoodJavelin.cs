@@ -13,6 +13,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables.WoodenJaveli
         public override void SetDefaults()
         {
             Projectile.CloneDefaults(ModContent.ProjectileType<WoodenJavelin>());
+            AIType = ProjectileID.JavelinFriendly;
 
             Projectile.width = Projectile.height = 10;
             DrawOffsetX = DrawOriginOffsetY = -2;
@@ -20,18 +21,15 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables.WoodenJaveli
 
         public override bool PreAI()
         {
-            // If projectile sprite faces up
-            Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver2;
             Projectile.spriteDirection = -Projectile.direction;
-
-            if (Projectile.timeLeft < 158)
+            if (Projectile.ai[0] > 22f)
             {
                 Projectile.velocity.X *= 0.98f;
                 Projectile.velocity.Y += 0.3f;
             }
 
             if (Projectile.lavaWet) Projectile.Kill();
-            return false;
+            return true;
         }
 
         public override void OnKill(int timeLeft)

@@ -83,6 +83,26 @@ Items: {
 		DisplayName: Copper Flail
 		Tooltip: ""
 	}
+
+	TinFlail: {
+		DisplayName: Tin Flail
+		Tooltip: ""
+	}
+
+	RichMahoganyFishingPole: {
+		DisplayName: Rich Mahogany Fishing Pole
+		Tooltip: ""
+	}
+
+	AshWoodFishingPole: {
+		DisplayName: Ash Wood Fishing Pole
+		Tooltip: Allows fishing in lava
+	}
+
+	BorealWoodFishingPole: {
+		DisplayName: Boreal Wood Fishing Pole
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -103,4 +123,8 @@ Projectiles: {
 	AshWoodJavelin.DisplayName: Ash Wood Javelin
 	BoneBall.DisplayName: Bone Ball
 	CopperFlail.DisplayName: Copper Flail
+	TinFlail.DisplayName: Tin Flail
+	RichMahoganyBobber.DisplayName: Rich Mahogany Bobber
+	AshWoodBobber.DisplayName: Ash Wood Bobber
+	BorealWoodBobber.DisplayName: Boreal Wood Bobber
 }

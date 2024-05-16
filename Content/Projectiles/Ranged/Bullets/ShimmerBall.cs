@@ -9,6 +9,8 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
 {
     public class ShimmerBall : ModProjectile
     {
+        public override void SetStaticDefaults() => Main.projFrames[Projectile.type] = 2;
+
         public override void SetDefaults()
         {
             Projectile.CloneDefaults(ProjectileID.Bullet);
@@ -21,6 +23,9 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
 
         public override bool PreAI()
         {
+            if (Main.rand.NextBool(2)) Projectile.frame = 0;
+                                  else Projectile.frame = 1;
+
             if (!Main.dedServ)
             {
                 if (Main.rand.NextBool(16)) // Shimmer Arrow have 8

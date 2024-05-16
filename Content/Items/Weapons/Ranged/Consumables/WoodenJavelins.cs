@@ -233,11 +233,11 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
             Item.CloneDefaults(ModContent.ItemType<WoodenJavelin>());
 
             // Use Properties
-            Item.useAnimation = Item.useTime -= 3; // 24
+            Item.useAnimation = Item.useTime -= 2; // 25
 
             // Weapon Properties
-            Item.damage += 6; // 19
-            
+            Item.damage += 2; // 15
+
             // Projectile Properties
             Item.shoot = ModContent.ProjectileType<Projectiles.Ranged.Consumables.WoodenJavelins.AshWoodJavelin>();
             Item.shootSpeed += 1f; // 9.5f
