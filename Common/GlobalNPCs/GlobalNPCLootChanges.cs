@@ -1,0 +1,18 @@
+﻿using VanillaFlexibility.Content.Items.Weapons.Ranged.Bullets;
+using Terraria;
+using Terraria.ID;
+using Terraria.GameContent.ItemDropRules;
+using Terraria.ModLoader;
+
+namespace VanillaFlexibility.Common.GlobalNPCs
+{
+    public class GlobalNPCLootChanges : GlobalNPC
+    {
+        public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
+        {
+            if (npc.type == NPCID.HallowBoss) npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<EndlessRainbowPouch>(), 4)); // 25%
+        }
+
+    }
+
+}

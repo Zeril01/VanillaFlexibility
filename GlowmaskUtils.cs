@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 
-namespace NoAmmoNoGuns
+namespace VanillaFlexibility
 {
     // Borrowed from here: https://github.com/GabeHasWon/SpiritMod/blob/638fa333f57498a04510c802c65de73f9a554adb/Utilities/GlowmaskUtils.cs#L211
     public static class GlowmaskUtils

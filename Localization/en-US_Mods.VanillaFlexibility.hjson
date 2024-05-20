@@ -94,14 +94,54 @@ Items: {
 		Tooltip: ""
 	}
 
+	BorealWoodFishingPole: {
+		DisplayName: Boreal Wood Fishing Pole
+		Tooltip: ""
+	}
+
 	AshWoodFishingPole: {
 		DisplayName: Ash Wood Fishing Pole
 		Tooltip: Allows fishing in lava
 	}
 
-	BorealWoodFishingPole: {
-		DisplayName: Boreal Wood Fishing Pole
-		Tooltip: ""
+	BeeBullet: {
+		DisplayName: Bee Bullet
+		Tooltip:
+			'''
+			'-Bzz? -Bz-bz! -Bzzz...'
+			Summons bees on impact
+			Works with [i:3333]
+			'''
+	}
+
+	EndlessWaspPouch: {
+		DisplayName: Endless Wasp Pouch
+		Tooltip:
+			'''
+			'Don't leave it open!'
+			Summons wasps on impact,
+			that ignores 10 defense
+			Works with [i:3333]
+			'''
+	}
+
+	EndlessRainbowPouch: {
+		DisplayName: Endless Rainbow Pouch
+		Tooltip:
+			'''
+			'Will you taste it?'
+			better than [i:1006]
+			'''
+	}
+
+	VortexBullet: {
+		DisplayName: Vortex Bullet
+		Tooltip:
+			'''
+			Can pierce one enemy
+			Summons homing bayonets
+			with 45 armor penetration
+			'''
 	}
 }
 
@@ -125,6 +165,11 @@ Projectiles: {
 	CopperFlail.DisplayName: Copper Flail
 	TinFlail.DisplayName: Tin Flail
 	RichMahoganyBobber.DisplayName: Rich Mahogany Bobber
-	AshWoodBobber.DisplayName: Ash Wood Bobber
 	BorealWoodBobber.DisplayName: Boreal Wood Bobber
+	AshWoodBobber.DisplayName: Ash Wood Bobber
+	BeeBullet.DisplayName: Bee Bullet
+	WaspBullet.DisplayName: Wasp Bullet
+	RainbowTear.DisplayName: Rainbow Tear
+	VortexBullet.DisplayName: Vortex Bullet
+	VortexBayonet.DisplayName: Vortex Bayonet
 }

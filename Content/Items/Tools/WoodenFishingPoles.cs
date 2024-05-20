@@ -8,7 +8,7 @@ namespace VanillaFlexibility.Content.Items.Tools
     // https://github.com/tModLoader/tModLoader/blob/45d71f0de361f7ef59349b64ee9ce504f9161845/ExampleMod/Content/Items/Tools/ExampleFishingRod.cs
     public class RichMahoganyFishingPole : ModItem
     {
-        public override string Texture => VanillaFlexibility.AssetPath + "Textures/Items/Tools/WoodenFishingPoles/RichMahoganyFishingPole";
+        public override string Texture => VanillaFlexibility.AssetPath + "Textures/Items/WoodenFishingPoles/RichMahoganyFishingPole";
 
         public override void SetDefaults()
         {
@@ -37,7 +37,7 @@ namespace VanillaFlexibility.Content.Items.Tools
 
     public class BorealWoodFishingPole : ModItem
     {
-        public override string Texture => VanillaFlexibility.AssetPath + "Textures/Items/Tools/WoodenFishingPoles/BorealWoodFishingPole";
+        public override string Texture => VanillaFlexibility.AssetPath + "Textures/Items/WoodenFishingPoles/BorealWoodFishingPole";
 
         public override void SetDefaults()
         {
@@ -65,7 +65,7 @@ namespace VanillaFlexibility.Content.Items.Tools
 
     public class AshWoodFishingPole : ModItem
     {
-        public override string Texture => VanillaFlexibility.AssetPath + "Textures/Items/Tools/WoodenFishingPoles/AshWoodFishingPole";
+        public override string Texture => VanillaFlexibility.AssetPath + "Textures/Items/WoodenFishingPoles/AshWoodFishingPole";
         public override void SetStaticDefaults() => ItemID.Sets.CanFishInLava[Item.type] = true;
 
         public override void SetDefaults()

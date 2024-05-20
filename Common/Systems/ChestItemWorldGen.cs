@@ -1,4 +1,5 @@
 ﻿using VanillaFlexibility.Content.Items.Weapons.Melee.Spears;
+using VanillaFlexibility.Content.Items.Weapons.Ranged.Bullets;
 using VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables;
 using Terraria;
 using Terraria.ID;
@@ -17,6 +18,20 @@ namespace VanillaFlexibility.Common.Systems
 				if (chest == null) continue;
                 
 				Tile chestTile = Main.tile[chest.x, chest.y];
+                if (chestTile.TileType == TileID.Containers && chestTile.TileFrameX == 23 * 36)
+                {
+                    for (int inventoryIndex = 0; inventoryIndex < Chest.maxItems; inventoryIndex++)
+                    {
+                        if (chest.item[inventoryIndex].type == ItemID.None)
+                        {
+                            chest.item[inventoryIndex].SetDefaults(ModContent.ItemType<EndlessWaspPouch>());
+                            break;
+                        }
+
+                    }
+
+                }
+
                 if (chestTile.TileType == TileID.Containers2 && chestTile.TileFrameX == 10 * 36) // Sandstone Chest
                 {
                     for (int inventoryIndex = 0; inventoryIndex < Chest.maxItems; inventoryIndex++)
