@@ -12,7 +12,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Bullets
             Item.CloneDefaults(ItemID.MusketBall);
 
             // Common Properties
-            Item.value += 2; // Sell value: 9 / 5 = 1.8 Copper
+            Item.value = 9; // Sell value: 9 / 5 = 1.8 Copper
             Item.rare = ItemRarityID.Green;
 
             // Weapon Properties

@@ -13,7 +13,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Melee.Flails
             Item.CloneDefaults(ModContent.ItemType<CopperFlail>());
 
             // Common Properties
-            Item.value += 250; // Sell value: 750 / 5 = 1.5 Silver
+            Item.value = 750; // Sell value: 750 / 5 = 1.5 Silver
 
             // Use Properties
             Item.useAnimation = Item.useTime -= 1; // 49

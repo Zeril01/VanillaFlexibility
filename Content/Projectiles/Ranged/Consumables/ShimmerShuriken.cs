@@ -16,7 +16,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables
             Projectile.width = Projectile.height = 20;
             DrawOffsetX = DrawOriginOffsetY = -2;
 
-            Projectile.timeLeft = 60 * 5;
+            Projectile.timeLeft = 5 * 60;
         }
 
         public override Color? GetAlpha(Color lightColor) => Color.White * Projectile.Opacity;

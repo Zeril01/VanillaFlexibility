@@ -13,7 +13,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables
         {
             Projectile.CloneDefaults(ProjectileID.ThrowingKnife);
 
-            Projectile.timeLeft = 60 * 5;
+            Projectile.timeLeft = 5 * 60;
         }
         
         public override Color? GetAlpha(Color lightColor) => Color.White * Projectile.Opacity;

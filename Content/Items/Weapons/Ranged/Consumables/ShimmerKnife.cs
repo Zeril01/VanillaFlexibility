@@ -12,10 +12,10 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
             Item.CloneDefaults(ItemID.ThrowingKnife);
 
             // Common Properties
-            Item.value += 15; // Sell value: 65 / 5 = 13 Copper
+            Item.value = 65; // Sell value: 65 / 5 = 13 Copper
             Item.rare = ItemRarityID.Blue;
-            Item.width -= 8; // 10
-            Item.height -= 2; // 18
+            Item.width = 10;
+            Item.height = 18;
 
             // Weapon Properties
             Item.damage += 3; // 15

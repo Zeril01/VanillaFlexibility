@@ -14,9 +14,9 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
             Item.CloneDefaults(ItemID.BoneJavelin);
 
             // Common Properties
-            Item.value -= 45; // Sell value: 5 / 5 = 1 Copper
+            Item.value = 5; // Sell value: 5 / 5 = 1 Copper
             Item.rare = ItemRarityID.White;
-            Item.width = Item.height -= 6; // 24
+            Item.width = Item.height = 24;
 
             // Use Properties
             Item.useAnimation = Item.useTime += 2; // 27

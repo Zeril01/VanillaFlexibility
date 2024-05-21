@@ -15,7 +15,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Melee.Flails
             // Common Properties
             Item.value = 500; // Sell value: 500 / 5 = 1 Silver
             Item.rare = ItemRarityID.White;
-            Item.width = Item.height -= 4; // 24
+            Item.width = Item.height = 24;
 
             // Use Properties
             Item.useAnimation = Item.useTime += 5; // 50

@@ -12,7 +12,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
             Item.CloneDefaults(ItemID.Shuriken);
 
             // Common Properties
-            Item.value += 10; // Sell value: 25 / 5 = 5 Copper
+            Item.value = 25; // Sell value: 25 / 5 = 5 Copper
             Item.rare = ItemRarityID.Blue;
             Item.width = Item.height = 20;
 

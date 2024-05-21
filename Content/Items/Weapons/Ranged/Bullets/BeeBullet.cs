@@ -12,7 +12,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Bullets
             Item.CloneDefaults(ItemID.MeteorShot);
 
             // Common Properties
-            Item.value += 15; // Sell value: 20 / 5 = 4 Copper
+            Item.value = 20; // Sell value: 20 / 5 = 4 Copper
 
             // Weapon Properties
             Item.damage -= 3; // 5

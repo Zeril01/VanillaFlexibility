@@ -15,7 +15,7 @@ namespace VanillaFlexibility.Content.Projectiles.Melee.Spears
         {
             Projectile.CloneDefaults(ProjectileID.Spear);
 
-            Projectile.width = Projectile.height -= 6; // 12
+            Projectile.width = Projectile.height = 12;
         }
 
         public override bool PreAI()

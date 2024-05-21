@@ -1,1 +1,15 @@
-Modify this file with a description of your mod.
+This mod currently adds:
+
+* 3 fishing poles
+* 2 flails
+* 3 spears
+* 6 bullets
+* 10 consumables for ranged
+
+Tips on how to find some items
+
+* Bone Ball can be bought from a Skeleton Merchant
+* Endless Rainbow Pouch falls from the Empress of Light
+* Endless Wasp Pouch is always found in the Dungeon's Jungle Chest
+
+Compatible with any mod

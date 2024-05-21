@@ -19,7 +19,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Melee.Spears
 
             // Common Properties
             Item.value = 100000; // Sell value: 10 / 5 = 2 Gold
-            Item.width = Item.height -= 6; // 34
+            Item.width = Item.height = 34;
 
             // Use Properties
             Item.useAnimation = Item.useTime -= 4; // 27

@@ -13,9 +13,9 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
             Projectile.CloneDefaults(ProjectileID.Bullet);
             AIType = ProjectileID.Bullet;
 
-            Projectile.light -= 0.25f; // 0.25f
+            Projectile.light = 0.25f;
 
-            Projectile.penetrate += 1; // 2
+            Projectile.penetrate = 2;
             Projectile.usesLocalNPCImmunity = true;
             Projectile.localNPCHitCooldown = 20; // Meteor Shot and High Velocity Bullet have "15"
         }
