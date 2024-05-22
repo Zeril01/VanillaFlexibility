@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
-using Terraria.Audio;
 using Terraria;
 using Terraria.ID;
+using Terraria.Audio;
 using Terraria.ModLoader;
 
 namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets

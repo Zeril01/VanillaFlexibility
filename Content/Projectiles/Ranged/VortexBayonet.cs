@@ -88,7 +88,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged
             return closestNPC;
         }
 
-        public override void OnKill(int timeLeft) => SoundEngine.PlaySound(SoundID.Item10, Projectile.position);
+        public override void OnKill(int timeLeft) => SoundEngine.PlaySound(SoundID.Item10, Projectile.position); //? пыль
     }
 
 }

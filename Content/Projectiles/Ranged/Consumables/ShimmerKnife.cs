@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.ID;
 using Terraria.Audio;
 using Terraria.GameContent.Drawing;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables

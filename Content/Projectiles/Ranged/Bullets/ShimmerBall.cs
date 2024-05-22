@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.ID;
 using Terraria.Audio;
 using Terraria.GameContent.Drawing;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
@@ -16,6 +16,8 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
             Projectile.CloneDefaults(ProjectileID.Bullet);
             AIType = ProjectileID.Bullet;
 
+            DrawOriginOffsetY = -2;
+
             Projectile.timeLeft = 30;
         }
 
@@ -28,7 +30,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
 
             if (!Main.dedServ)
             {
-                if (Main.rand.NextBool(16)) // Shimmer Arrow have 8
+                if (Projectile.timeLeft < 27 && Main.rand.NextBool(16)) // Shimmer Arrow have 8
                 {
                     Dust dust = Dust.NewDustPerfect(Projectile.Center, DustID.SparkForLightDisc, Projectile.velocity * 0f, 0, Main.hslToRgb(Main.rand.NextFloat(), 1f, 0.5f), 1f);
                     dust.noGravity = true;

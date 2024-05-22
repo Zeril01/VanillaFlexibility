@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
-using Terraria.ID;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
