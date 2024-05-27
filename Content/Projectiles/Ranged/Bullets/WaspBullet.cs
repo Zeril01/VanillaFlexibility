@@ -53,8 +53,8 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
                                                                                              21,
                                                                                              0f,
                                                                                              Main.myPlayer);
-                        // By default, the penetration of wasp is 3
-                        Main.projectile[wasp].penetrate = 2;
+                        Main.projectile[wasp].DamageType = DamageClass.Ranged;
+                        Main.projectile[wasp].penetrate = 2; // By default, the penetration of wasp is 3
                     }
 
                 }

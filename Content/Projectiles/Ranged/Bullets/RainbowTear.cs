@@ -22,7 +22,6 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
 
         public override void AI()
         {
-            // If projectile sprite faces up
             Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver2;
 
             if (Projectile.timeLeft < 597)

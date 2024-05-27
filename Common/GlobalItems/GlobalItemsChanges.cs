@@ -1,7 +1,6 @@
 ﻿using VanillaFlexibility.Content.Items.Weapons.Melee.Spears;
 using VanillaFlexibility.Content.Items.Weapons.Ranged.Bullets;
 using VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables;
-using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -12,12 +11,12 @@ namespace VanillaFlexibility.Common.GlobalItems
     {
         public override void SetStaticDefaults()
         {
-            // M-E-L-E-E
+            //// MELEE
             // Flails
             ItemID.Sets.ShimmerTransformToItem[ItemID.Mace] = ModContent.ItemType<MetalSpear>();
             ItemID.Sets.ShimmerTransformToItem[ItemID.FlamingMace] = ModContent.ItemType<MetalSpear>();
 
-            // R-A-N-G-E-D
+            //// RANGED
             // Consumables
             ItemID.Sets.ShimmerTransformToItem[ItemID.Shuriken] = ModContent.ItemType<ShimmerShuriken>();
             ItemID.Sets.ShimmerTransformToItem[ItemID.ThrowingKnife] = ModContent.ItemType<ShimmerKnife>();
@@ -45,16 +44,7 @@ namespace VanillaFlexibility.Common.GlobalItems
     public class TungstenBulletGlobalChanges : GlobalItem
     {
         public override bool AppliesToEntity(Item item, bool lateInstantiation) => item.type == ItemID.TungstenBullet;
-
-        public override void SetDefaults(Item item)
-        {
-            item.StatsModifiedBy.Add(Mod);
-
-            item.shoot = ModContent.ProjectileType<Content.Projectiles.Ranged.Bullets.ReTungstenBullet>();
-            item.ArmorPenetration = 2;
-        }
-
-        public override void ModifyTooltips(Item item, List<TooltipLine> tooltips) => tooltips.Add(new(Mod, "SpecialShiftClick", "Projectile was resprite\nIgnore 2 enemy defense"));
+        public override void SetDefaults(Item item) => item.shoot = ModContent.ProjectileType<Content.Projectiles.Ranged.Bullets.ReTungstenBullet>();
     }
 
 }

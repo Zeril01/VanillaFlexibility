@@ -57,8 +57,8 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
                                                                                             9,
                                                                                 Main.player[Projectile.owner].beeKB(0f),
                                                                                 Main.myPlayer);
-                        // By default, the penetration of bee is 3
-                        Main.projectile[bee].penetrate = 2;
+                        Main.projectile[bee].DamageType = DamageClass.Ranged;
+                        Main.projectile[bee].penetrate = 2; // By default, the penetration of bee is 3
                     }
 
                 }

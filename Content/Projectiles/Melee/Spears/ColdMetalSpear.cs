@@ -46,7 +46,7 @@ namespace VanillaFlexibility.Content.Projectiles.Melee.Spears
 
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
-            if (Main.rand.NextBool(5)) target.AddBuff(BuffID.Frostburn, Main.rand.Next(120, 181));
+            if (Main.rand.NextBool(5)) target.AddBuff(BuffID.Frostburn, Main.rand.Next(150, 181));
         }
 
     }

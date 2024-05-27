@@ -20,10 +20,12 @@
 	  <Folder Include="Assets\Sounds\Projectiles\" />
 	  <Folder Include="Common\GlobalItems\" />
 	  <Folder Include="Content\Items\Weapons\Magic\" />
+	  <Folder Include="Content\Items\Weapons\Ranged\Arrows\" />
 	  <Folder Include="Content\Items\Weapons\Ranged\Bows\" />
 	  <Folder Include="Content\Items\Weapons\Ranged\Guns\" />
 	  <Folder Include="Content\Items\Weapons\Ranged\Launchers\" />
 	  <Folder Include="Content\Items\Weapons\Summon\" />
+	  <Folder Include="Content\Projectiles\Ranged\Arrows\" />
 	</ItemGroup>
 
 </Project>

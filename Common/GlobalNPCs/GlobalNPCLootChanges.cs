@@ -6,6 +6,7 @@ using Terraria.ModLoader;
 
 namespace VanillaFlexibility.Common.GlobalNPCs
 {
+    // https://github.com/tModLoader/tModLoader/blob/1.4.4/ExampleMod/Common/GlobalNPCs/ExampleNPCLoot.cs
     public class GlobalNPCLootChanges : GlobalNPC
     {
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)

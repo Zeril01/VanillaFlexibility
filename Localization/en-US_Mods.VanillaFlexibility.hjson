@@ -143,11 +143,6 @@ Items: {
 			with 45 armor penetration
 			'''
 	}
-
-	FrostfireArrow: {
-		DisplayName: Frostfire Arrow
-		Tooltip: ""
-	}
 }
 
 Projectiles: {
@@ -177,5 +172,4 @@ Projectiles: {
 	RainbowTear.DisplayName: Rainbow Tear
 	VortexBullet.DisplayName: Vortex Bullet
 	VortexBayonet.DisplayName: Vortex Bayonet
-	FrostfireArrow.DisplayName: Frostfire Arrow
 }

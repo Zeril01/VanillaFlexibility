@@ -40,7 +40,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged
 
             if (Projectile.alpha > 0) Projectile.alpha -= 15;
 
-            int totalDust = 9;
+            int totalDust = 15;
             for (int i = 0; i < totalDust; i++)
             {
                 Dust dust = Dust.NewDustPerfect(Projectile.position, DustID.Vortex, Projectile.velocity * 0f, 200, default, 0.425f);
