@@ -9,16 +9,18 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Consumables.WoodenJaveli
     public class WoodenJavelin : ModProjectile
     {
         public override string Texture => VanillaFlexibility.AssetPath + "Textures/Projectiles/WoodenJavelins/WoodenJavelin";
-
+        
         public override void SetDefaults()
         {
-            Projectile.CloneDefaults(ProjectileID.JavelinFriendly);
+            Projectile.CloneDefaults(ProjectileID.BoneJavelin);
             AIType = ProjectileID.JavelinFriendly;
 
             Projectile.width = Projectile.height = 10;
             DrawOffsetX = DrawOriginOffsetY = -2;
 
             Projectile.penetrate = 1;
+
+            Projectile.hide = false;
         }
 
         public override bool PreAI()

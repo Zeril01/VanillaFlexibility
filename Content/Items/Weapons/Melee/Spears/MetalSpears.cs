@@ -1,4 +1,5 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace VanillaFlexibility.Content.Items.Weapons.Melee.Spears
@@ -18,7 +19,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Melee.Spears
             Item.CloneDefaults(ItemID.Trident);
 
             // Common Properties
-            Item.value = 100000; // Sell value: 10 / 5 = 2 Gold
+            Item.value = Item.sellPrice(gold: 2);
             Item.width = Item.height = 34;
 
             // Use Properties

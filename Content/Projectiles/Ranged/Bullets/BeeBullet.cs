@@ -24,11 +24,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
             Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver2;
             Projectile.spriteDirection = -Projectile.direction; // Like Bee Arrow
 
-            if (Projectile.timeLeft < 597)
-            {
-                Projectile.alpha -= 51;
-                if (Projectile.alpha < 0) Projectile.alpha = 0;
-            }
+            if (Projectile.timeLeft == 594) Projectile.alpha -= 255;
 
             if (Projectile.wet && !Projectile.honeyWet && !Projectile.shimmerWet) Projectile.Kill();
 
@@ -55,8 +51,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
                                                                                             speedX, speedY,
                                                                                 Main.player[Projectile.owner].beeType(),
                                                                                             9,
-                                                                                Main.player[Projectile.owner].beeKB(0f),
-                                                                                Main.myPlayer);
+                                                                                Main.player[Projectile.owner].beeKB(0f), Main.myPlayer);
                         Main.projectile[bee].DamageType = DamageClass.Ranged;
                         Main.projectile[bee].penetrate = 2; // By default, the penetration of bee is 3
                     }

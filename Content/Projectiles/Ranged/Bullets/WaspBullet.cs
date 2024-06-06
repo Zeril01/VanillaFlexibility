@@ -20,14 +20,16 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
             Projectile.scale = 1f;
         }
 
+        public override Color? GetAlpha(Color lightColor) => Color.White * Projectile.Opacity;
+
         public override void AI()
         {
             Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver2;
             Projectile.spriteDirection = -Projectile.direction; // Like Bee Arrow
 
-            if (Projectile.timeLeft < 596) Projectile.alpha -= 43;
-            
-            if (Projectile.wet && !Projectile.honeyWet && !Projectile.shimmerWet || Projectile.shimmerWet) Projectile.Kill();
+            if (Projectile.timeLeft == 596) Projectile.alpha -= 128;
+
+            if (Projectile.wet && !Projectile.honeyWet || Projectile.shimmerWet) Projectile.Kill();
         }
 
         public override void OnKill(int timeLeft)
@@ -50,9 +52,7 @@ namespace VanillaFlexibility.Content.Projectiles.Ranged.Bullets
                         int wasp = Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.position.X, Projectile.position.Y,
                                                                                              speedX, speedY,
                                                                                              ProjectileID.Wasp,
-                                                                                             21,
-                                                                                             0f,
-                                                                                             Main.myPlayer);
+                                                                                             21, 0f, Main.myPlayer);
                         Main.projectile[wasp].DamageType = DamageClass.Ranged;
                         Main.projectile[wasp].penetrate = 2; // By default, the penetration of wasp is 3
                     }

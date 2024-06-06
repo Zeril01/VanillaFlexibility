@@ -143,6 +143,43 @@ Items: {
 			with 45 armor penetration
 			'''
 	}
+
+	FlinxFurEarflaps: {
+		DisplayName: Flinx Fur Earflaps
+		Tooltip:
+			'''
+			Increases summon damage by {0}%
+			{$CommonItemTooltip.IncreasesWhipRangeByPercent@1}
+			'''
+		SetBonus:
+			'''
+			{$CommonItemTooltip.IncreasesMaxSentriesBy}
+			Cannot be frozen
+			'''
+	}
+
+	FlinxFurHeadphones: {
+		DisplayName: Flinx Fur Headphones
+		Tooltip:
+			'''
+			Increases summon damage by {0}%
+			Increases whip speed by {1}%
+			'''
+		SetBonus:
+			'''
+			{$CommonItemTooltip.IncreasesMaxSentriesBy}
+			Cannot be chilled
+			'''
+	}
+
+	FlinxFurPants: {
+		DisplayName: Flinx Fur Pants
+		Tooltip:
+			'''
+			Increases summon damage by {0}%
+			{$CommonItemTooltip.PercentIncreasedMovementSpeed@1}
+			'''
+	}
 }
 
 Projectiles: {

@@ -44,7 +44,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override void AddRecipes()
         {
             CreateRecipe(15)
-                .AddIngredient(ItemID.Wood, 2)
+                .AddIngredient(ItemID.Wood, 3)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
@@ -75,7 +75,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             if (player.direction == -1) velocity = velocity.RotatedBy(MathHelper.ToRadians(-2f));
-            else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
+                                   else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
 
             Projectile.NewProjectileDirect(source, position + new Vector2(0, -8), velocity, type, damage, knockback, player.whoAmI);
             return false;
@@ -84,7 +84,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override void AddRecipes()
         {
             CreateRecipe(15)
-                .AddIngredient(ItemID.RichMahogany, 2)
+                .AddIngredient(ItemID.RichMahogany, 3)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
@@ -115,7 +115,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             if (player.direction == -1) velocity = velocity.RotatedBy(MathHelper.ToRadians(-2f));
-            else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
+                                   else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
 
             Projectile.NewProjectileDirect(source, position + new Vector2(0, -8), velocity, type, damage, knockback, player.whoAmI);
             return false;
@@ -124,7 +124,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override void AddRecipes()
         {
             CreateRecipe(15)
-                .AddIngredient(ItemID.Ebonwood, 2)
+                .AddIngredient(ItemID.Ebonwood, 3)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
@@ -155,7 +155,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             if (player.direction == -1) velocity = velocity.RotatedBy(MathHelper.ToRadians(-2f));
-            else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
+                                   else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
 
             Projectile.NewProjectileDirect(source, position + new Vector2(0, -8), velocity, type, damage, knockback, player.whoAmI);
             return false;
@@ -164,7 +164,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override void AddRecipes()
         {
             CreateRecipe(15)
-                .AddIngredient(ItemID.Shadewood, 2)
+                .AddIngredient(ItemID.Shadewood, 3)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
@@ -195,7 +195,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             if (player.direction == -1) velocity = velocity.RotatedBy(MathHelper.ToRadians(-2f));
-            else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
+                                   else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
 
             Projectile.NewProjectileDirect(source, position + new Vector2(0, -8), velocity, type, damage, knockback, player.whoAmI);
             return false;
@@ -204,7 +204,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override void AddRecipes()
         {
             CreateRecipe(15)
-                .AddIngredient(ItemID.Pearlwood, 2)
+                .AddIngredient(ItemID.Pearlwood, 3)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
@@ -232,7 +232,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             if (player.direction == -1) velocity = velocity.RotatedBy(MathHelper.ToRadians(-2f));
-            else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
+                                   else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
 
             Projectile.NewProjectileDirect(source, position + new Vector2(0, -8), velocity, type, damage, knockback, player.whoAmI);
             return false;
@@ -241,7 +241,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override void AddRecipes()
         {
             CreateRecipe(15)
-                .AddIngredient(ItemID.BorealWood, 2)
+                .AddIngredient(ItemID.BorealWood, 3)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
@@ -272,7 +272,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             if (player.direction == -1) velocity = velocity.RotatedBy(MathHelper.ToRadians(-2f));
-            else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
+                                   else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
 
             Projectile.NewProjectileDirect(source, position + new Vector2(0, -8), velocity, type, damage, knockback, player.whoAmI);
             return false;
@@ -281,7 +281,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override void AddRecipes()
         {
             CreateRecipe(15)
-                .AddIngredient(ItemID.PalmWood, 2)
+                .AddIngredient(ItemID.PalmWood, 3)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
@@ -311,7 +311,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             if (player.direction == -1) velocity = velocity.RotatedBy(MathHelper.ToRadians(-2f));
-            else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
+                                   else velocity = velocity.RotatedBy(MathHelper.ToRadians(2f));
 
             Projectile.NewProjectileDirect(source, position + new Vector2(0, -8), velocity, type, damage, knockback, player.whoAmI);
             return false;
@@ -320,7 +320,7 @@ namespace VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables
         public override void AddRecipes()
         {
             CreateRecipe(15)
-                .AddIngredient(ItemID.AshWood, 2)
+                .AddIngredient(ItemID.AshWood, 3)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
