@@ -180,6 +180,11 @@ Items: {
 			{$CommonItemTooltip.PercentIncreasedMovementSpeed@1}
 			'''
 	}
+
+	Mirror: {
+		DisplayName: Mirror
+		Tooltip: ""
+	}
 }
 
 Projectiles: {

@@ -1,9 +1,6 @@
 ﻿using VanillaFlexibility.Content.Items.Weapons.Melee.Spears;
 using VanillaFlexibility.Content.Items.Weapons.Ranged.Bullets;
 using VanillaFlexibility.Content.Items.Weapons.Ranged.Consumables;
-using Terraria;
-using Terraria.ID;
-using Terraria.ModLoader;
 
 namespace VanillaFlexibility.Common.GlobalItems
 {
@@ -24,7 +21,6 @@ namespace VanillaFlexibility.Common.GlobalItems
             // Bullets
             ItemID.Sets.ShimmerTransformToItem[ItemID.MusketBall] = ModContent.ItemType<ShimmerBall>();
         }
-
     }
 
     public class MusketBallGlobalChanges : GlobalItem
@@ -38,13 +34,5 @@ namespace VanillaFlexibility.Common.GlobalItems
                   .AddTile(TileID.Anvils)
                   .Register();
         }
-
     }
-    
-    public class TungstenBulletGlobalChanges : GlobalItem
-    {
-        public override bool AppliesToEntity(Item item, bool lateInstantiation) => item.type == ItemID.TungstenBullet;
-        public override void SetDefaults(Item item) => item.shoot = ModContent.ProjectileType<Content.Projectiles.Ranged.Bullets.ReTungstenBullet>();
-    }
-    
 }
